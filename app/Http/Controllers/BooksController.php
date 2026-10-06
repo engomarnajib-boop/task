@@ -11,6 +11,7 @@ class BooksController extends Controller
 {
    public function index (){
  return Book::query()->get();
+ 
    }
    public function show( int $id){
     return Book::query()->where('id',$id)->get();
